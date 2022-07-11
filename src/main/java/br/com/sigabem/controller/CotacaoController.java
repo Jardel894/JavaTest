@@ -21,7 +21,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CotacaoController {
 
-    private CotacaoService cotacaoService;
+    private final CotacaoService cotacaoService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

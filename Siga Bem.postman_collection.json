@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "2166e225-fef1-4ebc-b011-4c6e349d2079",
+		"name": "Siga Bem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19222192"
+	},
+	"item": [
+		{
+			"name": "Cotacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeDestinatario\": \"Jardel Barbosa\",\n    \"peso\": 100,\n    \"cepOrigem\": \"40170708\",\n    \"cepDestino\": \"44001056\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host-dev}}/cotacao",
+					"host": [
+						"{{host-dev}}"
+					],
+					"path": [
+						"cotacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cotacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host-dev}}/cotacao",
+					"host": [
+						"{{host-dev}}"
+					],
+					"path": [
+						"cotacao"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "host-dev",
+			"value": "https://api-siga-bem.herokuapp.com",
+			"type": "string"
+		}
+	]
+}
